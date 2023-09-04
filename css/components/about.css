@@ -1,0 +1,41 @@
+.about{
+    display: flex;
+    justify-content: space-between;/*fica um do lado do outro*/
+    gap: 4rem;
+    scroll-margin-top: 20rem;
+}
+.about .about__left{
+    max-width: 40rem;
+    flex: 1;
+}
+.about .about__left p{
+    margin: 1rem 0 2rem;
+}
+.about .about__left ul{
+    margin-left: -1.2rem; /*chegando as listas para a esquerda um pouco*/
+}
+.about .about__left ul li{
+    display: inline-block;/*deixa os links um ao lado do outro*/
+}
+.about .about__left ul li a {
+    display: inline-block;
+    padding: 1rem;
+}
+.about .about__right{
+    flex: 1;
+    max-width: 66rem;
+}
+@media only screen and (max-width: 768px){
+    .about{
+        flex-direction: column; /*deixa em colunas*/
+        align-items: center;
+    }
+    .about .about__left{
+        max-width: 60rem;
+        text-align: center;
+    }
+    .about .about__right{
+        text-align: center;
+    }
+}
+
